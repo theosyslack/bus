@@ -1,0 +1,11 @@
+li {
+  list-style: none; }
+
+.bus {
+  font-size: 2em;
+  font-family: "adobe-text-pro", "Helvetica", sans-serif; }
+  .bus .name {
+    font-weight: bold;
+    color: white;
+    background: orange;
+    padding-right: 1em; }

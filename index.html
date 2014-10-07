@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular</title>
+  <script src="bower_components/moment/moment.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//use.typekit.net/hhr0cay.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body data-ng-app="MyApp">
+  <div data-ng-controller="BusCtrl">
+    <table width="100%">
+      <tr>
+        <th>Name</th>
+        <th>Route</th>
+        <th>Direction</th>
+        <th>Time Estimate</th>
+      </tr>
+      <tr data-ng-repeat="bus in buses" class="bus">
+        <td class="name">{{bus.des}}</td>
+        <td>{{bus.rt}}</td>
+        <td>{{bus.rtdir}}</td>
+        <td class="time">{{until(bus.prdtm)}}</td> 
+      </tr>
+    </table>
+  </div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-moment/angular-moment.js"></script>
+  <script src="busctrl.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+var app=angular.module("MyApp",["angularMoment"]);app.controller("BusCtrl",function(o,e){e.get("buses.json").success(function(e,n,r,t){o.buses=e.bustime_response.prd,o.until=function(o){return time=o,prettyTime=moment(time,"YYYYMMDD hh:mm").fromNow()},o.now=moment().format("hh:mm")}).error(function(o,e,n,r){console.log("error")})});
